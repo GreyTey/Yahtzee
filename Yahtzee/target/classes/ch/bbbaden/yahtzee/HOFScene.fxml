@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.yahtzee.HOFController">
+            <AnchorPane prefHeight="750.0" prefWidth="700.0">
+            <children>
+               <Label layoutX="100.0" layoutY="50.0" text="Highscore-Liste aller Spieler">
+                  <font>
+                     <Font size="24.0" />
+                  </font>
+               </Label>
+               <TableView fx:id="tableHOF" layoutX="100.0" layoutY="100.0" prefHeight="600.0" prefWidth="500.0">
+                 <columns>
+                   <TableColumn fx:id="tableUsername" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" resizable="false" text="Username" />
+                   <TableColumn fx:id="tableSpiele" maxWidth="99.0" minWidth="99.0" prefWidth="99.0" resizable="false" text="Gespielte Spiele" />
+                     <TableColumn fx:id="tableDurPunkte" maxWidth="99.0" minWidth="99.0" prefWidth="99.0" text="Ø Punkte" />
+                     <TableColumn fx:id="tableHighscore" maxWidth="99.0" minWidth="99.0" prefWidth="99.0" text="Highscore" />
+                 </columns>
+                  <columnResizePolicy>
+                     <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                  </columnResizePolicy>
+               </TableView>
+               <Button fx:id="zurueckBtn" layoutX="14.0" layoutY="710.0" mnemonicParsing="false" onAction="#onZurueckBtnClick" text="Zurück" />
+            </children>
+            </AnchorPane>
+</VBox>

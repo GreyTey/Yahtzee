@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.yahtzee.GameController">
+    <AnchorPane prefHeight="750.0" prefWidth="700.0">
+        <children>
+            <Button fx:id="anleitungButton" layoutX="618.0" layoutY="710.0" mnemonicParsing="false" onAction="#onAnleitungsButtonClick" text="Anleitung" />
+            <Button fx:id="rollTheDiceButton" layoutX="209.0" layoutY="337.0" mnemonicParsing="false" onAction="#onRollTheDiceButtonClick" text="Würfeln" textAlignment="CENTER" />
+            <Button fx:id="dice2Button" layoutX="153.0" layoutY="389.0" mnemonicParsing="false" onAction="#onDice2ButtonClick" textAlignment="CENTER" visible="false" />
+            <Button fx:id="dice4Button" layoutX="302.0" layoutY="389.0" mnemonicParsing="false" onAction="#onDice4ButtonClick" textAlignment="CENTER" visible="false" />
+            <Button fx:id="dice1Button" layoutX="77.0" layoutY="389.0" mnemonicParsing="false" onAction="#onDice1ButtonClick" textAlignment="CENTER" visible="false" />
+            <Button fx:id="dice3Button" layoutX="227.0" layoutY="389.0" mnemonicParsing="false" onAction="#onDice3ButtonClick" textAlignment="CENTER" visible="false" />
+            <Button fx:id="dice5Button" layoutX="375.0" layoutY="389.0" mnemonicParsing="false" onAction="#onDice5ButtonClick" textAlignment="CENTER" visible="false" />
+            <Label layoutX="14.0" layoutY="14.0" text="Yahtzee">
+                <font>
+                    <Font size="36.0" />
+                </font>
+            </Label>
+            <Label fx:id="usernameLab" layoutX="445.0" layoutY="14.0" text="Username" />
+            <Label fx:id="highscoreLab" layoutX="558.0" layoutY="14.0" text="Highscore" />
+         <Button fx:id="einerBtn" layoutX="516.0" layoutY="137.0" mnemonicParsing="false" onAction="#onEinerBtnClick" prefHeight="25.0" prefWidth="93.0" text="Einer" />
+         <Button fx:id="zweierBtn" layoutX="516.0" layoutY="162.0" mnemonicParsing="false" onAction="#onZweierBtnClick" prefHeight="25.0" prefWidth="93.0" text="Zweier" />
+         <Button fx:id="dreierBtn" layoutX="516.0" layoutY="187.0" mnemonicParsing="false" onAction="#onDreierBtnClick" prefHeight="25.0" prefWidth="93.0" text="Dreier" />
+         <Button fx:id="viererBtn" layoutX="516.0" layoutY="212.0" mnemonicParsing="false" onAction="#onViererBtnClick" prefHeight="25.0" prefWidth="93.0" text="Vierer" />
+         <Button fx:id="fünferBtn" layoutX="516.0" layoutY="237.0" mnemonicParsing="false" onAction="#onFünferBtnCLick" prefHeight="25.0" prefWidth="93.0" text="Fünfer" />
+         <Button fx:id="sechserBtn" layoutX="516.0" layoutY="262.0" mnemonicParsing="false" onAction="#onSechserBtnClick" prefHeight="25.0" prefWidth="93.0" text="Sechser" />
+         <Button fx:id="bonusBtn" layoutX="516.0" layoutY="287.0" mnemonicParsing="false" onAction="#onBonusBtnClick" prefHeight="25.0" prefWidth="93.0" text="Bonus" />
+         <Button fx:id="einPaarBtn" layoutX="516.0" layoutY="324.0" mnemonicParsing="false" onAction="#onEinPaarBtnClick" prefHeight="25.0" prefWidth="93.0" text="1 Paar" />
+         <Button fx:id="zweiPaarBtn" layoutX="516.0" layoutY="349.0" mnemonicParsing="false" onAction="#onZweiPaarBtnClick" prefHeight="25.0" prefWidth="93.0" text="2 Paar" />
+         <Button fx:id="dreiGleicheBtn" layoutX="516.0" layoutY="374.0" mnemonicParsing="false" onAction="#onDreiGleicheBtnClick" prefHeight="25.0" prefWidth="93.0" text="Drei Gleiche" />
+         <Button fx:id="vierGleicheBtn" layoutX="516.0" layoutY="397.0" mnemonicParsing="false" onAction="#onVierGleicheBtnCLick" prefHeight="25.0" prefWidth="93.0" text="Vier Gleiche" />
+         <Button fx:id="kleineStrasseBtn" layoutX="516.0" layoutY="422.0" mnemonicParsing="false" onAction="#onKleineStrasseBtnClick" prefHeight="25.0" prefWidth="93.0" text="Kleine Strasse" />
+         <Button fx:id="grosseStrasseBtn" layoutX="516.0" layoutY="447.0" mnemonicParsing="false" onAction="#onGrosseStrasseBtnClick" prefHeight="25.0" prefWidth="93.0" text="Grosse Strasse" />
+         <Button fx:id="vollesHausBtn" layoutX="516.0" layoutY="472.0" mnemonicParsing="false" onAction="#onVollesHausBtnCLick" prefHeight="25.0" prefWidth="93.0" text="Volles Haus" />
+         <Button fx:id="chanceBtn" layoutX="516.0" layoutY="497.0" mnemonicParsing="false" onAction="#onChanceBtnCLick" prefHeight="25.0" prefWidth="93.0" text="Chance" />
+         <Button fx:id="yahtzeeBtn" layoutX="516.0" layoutY="522.0" mnemonicParsing="false" onAction="#onYahtzeeBtnClick" prefHeight="25.0" prefWidth="93.0" text="Yahtzee" />
+         <Button fx:id="totalBtn" layoutX="516.0" layoutY="561.0" mnemonicParsing="false" onAction="#onTotalBtnClick" prefHeight="25.0" prefWidth="93.0" text="Total" />
+         <Label fx:id="einerLbl" layoutX="627.0" layoutY="141.0" />
+         <Label fx:id="zweierLbl" layoutX="627.0" layoutY="166.0" />
+         <Label fx:id="dreierLbl" layoutX="627.0" layoutY="191.0" />
+         <Label fx:id="viererLbl" layoutX="626.0" layoutY="217.0" />
+         <Label fx:id="fünferLbl" layoutX="626.0" layoutY="241.0" />
+         <Label fx:id="sechserLbl" layoutX="626.0" layoutY="266.0" />
+         <Label fx:id="bonusLbl" layoutX="626.0" layoutY="291.0" />
+         <Label fx:id="einPaarLbl" layoutX="626.0" layoutY="328.0" />
+         <Label fx:id="zweiPaarLbl" layoutX="626.0" layoutY="353.0" />
+         <Label fx:id="dreiGleicheLbl" layoutX="626.0" layoutY="378.0" />
+         <Label fx:id="vierGleicheLbl" layoutX="626.0" layoutY="401.0" />
+         <Label fx:id="kleineStrasseLbl" layoutX="626.0" layoutY="426.0" />
+         <Label fx:id="grosseStrasseLbl" layoutX="626.0" layoutY="451.0" />
+         <Label fx:id="vollesHausLbl" layoutX="627.0" layoutY="476.0" />
+         <Label fx:id="chanceLbl" layoutX="626.0" layoutY="501.0" />
+         <Label fx:id="yahtzeeLbl" layoutX="626.0" layoutY="526.0" />
+         <Label fx:id="totalLbl" layoutX="624.0" layoutY="566.0" />
+         <Button fx:id="beendenBtn" layoutX="207.0" layoutY="434.0" mnemonicParsing="false" onAction="#onBeendenBtnClick" text="Beenden" visible="false" />
+         <Button fx:id="hofBtn" layoutX="520.0" layoutY="710.0" mnemonicParsing="false" onAction="#onHofBtnClick" text="Hall Of Fame" />
+         <Button fx:id="newGameBtn" layoutX="199.0" layoutY="401.0" mnemonicParsing="false" onAction="#onNewGameBtnClick" text="Neues Spiel" visible="false" />
+        </children>
+    </AnchorPane>
+</VBox>
